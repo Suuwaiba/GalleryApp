@@ -88,7 +88,7 @@ class HomePage extends StatelessWidget {
                     ),
                   ),
                   Image.network(
-                    'https://images.unsplash.com/photo-1611872336305-2bb819409c3f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aGlqYWJpfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+                'https://images.unsplash.com/flagged/photo-1557828823-b5bb7f45d726?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8YWZyaWNhbiUyMGhvbGlkYXl8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
                     height: 218,
                     width: MediaQuery.of(context).size.width,
                     fit: BoxFit.cover,
@@ -97,7 +97,7 @@ class HomePage extends StatelessWidget {
                     height: 10,
                   ),
                   Row(
-                    mainAxisAlignment:MainAxisAlignment.spaceBetween,
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Row(
                         children: [
@@ -138,27 +138,130 @@ class HomePage extends StatelessWidget {
                       ),
                       Material(
                         color: Colors.grey.withOpacity(0.1),
+                        borderRadius: BorderRadius.circular(35),
+                        child: Padding(
+                          padding: EdgeInsets.all(16),
+                          child: Row(
+                            children: [
+                              Icon(
+                                CupertinoIcons.chat_bubble_fill,
+                                color: Colors.grey,
+                              ),
+                              SizedBox(
+                                width: 5,
+                              ),
+                              Text(
+                                '123',
+                                style: TextStyle(fontSize: 14),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            ),
+            Card(
+              color: Colors.white,
+              margin: EdgeInsets.fromLTRB(16, 10, 16, 0),
+              child: Column(
+                children: [
+                  ListTile(
+                    leading: CircleAvatar(
+                      backgroundImage: NetworkImage(
+                        'https://images.unsplash.com/photo-1620195408127-7fa57b2a28ab?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjh8fGhpamFiaXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+                      ),
+                    ),
+                    title: Text(
+                      'Suu Akaama',
+                      style:
+                          TextStyle(fontWeight: FontWeight.w600, fontSize: 17),
+                    ),
+                    subtitle: Row(
+                      children: [
+                        Icon(
+                          Icons.location_on,
+                          size: 14,
+                          color: Colors.blue,
+                        ),
+                        Text('Amasaman,Ghana')
+                      ],
+                    ),
+                  ),
+                  Image.network(
+                    'https://images.unsplash.com/photo-1611872336305-2bb819409c3f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aGlqYWJpfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+                    height: 218,
+                    width: MediaQuery.of(context).size.width,
+                    fit: BoxFit.cover,
+                  ),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Row(
+                        children: [
+                          Material(
+                            color: Colors.grey.withOpacity(0.1),
                             borderRadius: BorderRadius.circular(35),
                             child: Padding(
                               padding: EdgeInsets.all(16),
                               child: Row(
                                 children: [
                                   Icon(
-                                    CupertinoIcons.chat_bubble_fill,
-                                    color: Colors.grey,
+                                    Icons.favorite,
+                                    color: Colors.red,
                                   ),
                                   SizedBox(
                                     width: 5,
                                   ),
                                   Text(
-                                    '123',
+                                    '763',
                                     style: TextStyle(fontSize: 14),
-                                  ),
+                                  )
                                 ],
                               ),
                             ),
+                          ),
+                          SizedBox(
+                            width: 10,
+                          ),
+                          FlutterImageStack(
+                            imageList: _images,
+                            showTotalCount: false,
+                            totalCount: 4,
+                            itemRadius: 35,
+                            itemCount: 4,
+                            itemBorderWidth: 2,
+                          ),
+                        ],
                       ),
-                     ],
+                      Material(
+                        color: Colors.grey.withOpacity(0.1),
+                        borderRadius: BorderRadius.circular(35),
+                        child: Padding(
+                          padding: EdgeInsets.all(16),
+                          child: Row(
+                            children: [
+                              Icon(
+                                CupertinoIcons.chat_bubble_fill,
+                                color: Colors.grey,
+                              ),
+                              SizedBox(
+                                width: 5,
+                              ),
+                              Text(
+                                '500',
+                                style: TextStyle(fontSize: 14),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ],
                   ),
                 ],
               ),
