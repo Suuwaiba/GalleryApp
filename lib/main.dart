@@ -24,6 +24,13 @@ class HomePage extends StatelessWidget {
     'https://images.unsplash.com/photo-1612626256634-991e6e977fc1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1712&q=80',
     'https://images.unsplash.com/photo-1593642702749-b7d2a804fbcf?ixid=MXwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80'
   ];
+List<String> _images2 = [
+    'https://images.unsplash.com/photo-1536528947088-d655e462f4d3?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGhpamFiaXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+    'https://images.unsplash.com/photo-1557862921-37829c790f19?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bWFufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+    'https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bWFufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60',
+    'https://images.unsplash.com/photo-1579610520129-963c74781ffb?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8d29tYW4lMjBmYWNlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -127,7 +134,7 @@ class HomePage extends StatelessWidget {
                             width: 10,
                           ),
                           FlutterImageStack(
-                            imageList: _images,
+                            imageList: _images2,
                             showTotalCount: false,
                             totalCount: 4,
                             itemRadius: 35,
